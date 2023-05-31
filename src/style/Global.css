@@ -1,0 +1,35 @@
+:root {
+    --primary: gray;
+    --secondary: white;
+  }
+
+@tailwind base;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    section {
+        @apply font-default
+    }
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+*::-webkit-scrollbar-track {
+    background: var(--primary);
+    
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 14px;
+    border: 3px solid var(--primary);
+}
+
+@tailwind components;
+@tailwind utilities;
